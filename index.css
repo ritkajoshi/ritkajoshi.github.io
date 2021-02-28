@@ -1,0 +1,212 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* :root{
+    --navbar-height:49px;
+} */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    width: 100%;
+    top: 0px;
+    height: 70px;
+    z-index: 3;
+}
+/* navbar logo and image  */
+#logo{   
+    margin: -9px -24px;
+}
+#logo img{
+    width: 61px;
+    margin: 17px 59px;
+}
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo 2', cursive;
+}
+#navbar::before{
+    display: flex;
+    content: "";
+    background-color: #00000059;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.99;
+}
+#navbar ul li{
+    font-size: 1.3rem;
+    list-style: none;
+}
+#navbar ul li a{
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* home section styling  */
+#home{
+   display: flex;
+   flex-direction: column;
+   padding: 3px 200px;
+   justify-content: center;
+   align-items: center;
+   height: 619px;
+}
+#home::before{
+    content: "";
+    background:url(sect.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 682px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.78;
+ }
+ #home h1{
+     color:rgb(46, 37, 37);
+     text-align: center;
+     font-family: 'Bree Serif', serif;
+    }
+    #home p{
+        color: white;
+        text-align: center;
+        font-size: 1.2rem;
+        font-family: 'Bree Serif', serif;
+    }
+
+    /* services section  */
+    #services{
+        display: flex;
+        margin: 19px;
+
+    }
+    #services .box{
+        border: 2px solid brown;
+        border-radius: 20px;
+        margin: 14px 14px;
+        padding: 7px;
+        background-color: #e2dbd8;
+        text-align: center;
+    }
+    #services .box img{
+        height: 160px;
+        display: block;
+        margin: auto;
+        border: 2px solid rgb(230, 210, 210);
+        border-radius: 45%;
+    }
+    #services .box p{
+        font-family: 'Bree Serif', serif;
+        font-size: 0.95rem;
+    }
+
+
+    /* clients section  */
+    #client-section{
+     height: 350px;
+     position: relative;
+    }
+    #client-section::before{
+        content: "";
+        background:url("sect.jpg") no-repeat center center/cover;
+         position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.4;
+    }
+    #clients{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #clients .client-item img{
+        height: 124px;
+    }
+    .client-item{
+        padding: -50px;
+    }
+/* contact_section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    background:url("telephone-586266_1920.jpg") no-repeat center center/cover;
+     position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.79;
+}
+#contact-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 34px;
+}
+#contact-box form{
+  width: 50%;
+}
+#contact-box label{
+  font-size: 1.3rem;
+  font-family: 'Bree Serif', serif;
+}
+#contact-box input,
+#contact-box textarea
+{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 0.9rem;
+}
+
+/* footer  */
+footer{
+    background-color: black;
+    color:white;
+    padding:2px 20px;
+}
+    /* utility classes  */
+
+    .h-primary{
+        font-size: 2.8rem;
+        padding: 12px;
+        font-family: 'Bree Serif', serif;
+    }
+ .btn{
+    padding: 14px 33px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    font-size: 13.8px;
+    margin: 19px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
+.h-secondary{
+    font-size: 1.8rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+}
+
+ 
+ 
